@@ -1,0 +1,209 @@
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ba9730;
+}
+
+/* Main Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Swiper Customization */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #D4AF37 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #D4AF37 !important;
+}
+
+/* Gallery Customization */
+.gallery-swiper .swiper-slide {
+  padding: 10px;
+}
+
+/* Gold Border Animation */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+.feature-card:hover {
+  animation: goldPulse 2s infinite;
+}
+
+/* Button shine effect */
+.bg-casino-gold {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-casino-gold::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+  pointer-events: none;
+}
+
+.bg-casino-gold:hover::after {
+  transform: rotate(30deg) translate(150%, -150%);
+}
+
+/* Accordion styles */
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+.accordion-item.active .accordion-icon .fa-plus {
+  transform: rotate(45deg);
+}
+
+/* Casino card hover effect */
+.casino-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.casino-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Hero section video background */
+#hero video {
+  filter: grayscale(30%);
+}
+
+/* Mobile menu animation */
+#mobileMenu {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#mobileMenu.active {
+  transform: translateY(0);
+  opacity: 1;
+  display: flex;
+}
+
+/* Lightbox zoom effect */
+.lightbox-content img {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-content.active img {
+  transform: scale(1);
+}
+
+/* Toast animation */
+#toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Countdown text shadow */
+.countdown-timer {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Custom animation for AOS elements */
+[data-aos="casino-fade"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos="casino-fade"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Confetti animation for success modal */
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #D4AF37;
+  opacity: 0;
+  animation: confetti 5s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  display: inline-block;
+}
+
+.spinner.show {
+  display: inline-block;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 640px) {
+  .countdown-timer {
+    gap: 1rem;
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
