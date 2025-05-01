@@ -299,7 +299,7 @@ const setupCasinoModal = () => {
       location: 'Singapore',
       games: '500+ table games, 1,600+ slot machines',
       rooms: '2,561 luxury rooms and suites',
-      description: 'Marina Bay Sands is an integrated resort fronting Marina Bay in Singapore. The iconic design has transformed Singapore's skyline and tourism landscape since it opened in 2010. The complex includes a hotel, convention and exhibition facilities, theatres, entertainment venues, retailers, and restaurants.',
+      description: 'Marina Bay Sands is an integrated resort fronting Marina Bay in Singapore. The iconic design has transformed Singapore\'s skyline and tourism landscape since it opened in 2010. The complex includes a hotel, convention and exhibition facilities, theatres, entertainment venues, retailers, and restaurants.',
       website: 'https://www.marinabaysands.com/',
       booking: 'https://www.marinabaysands.com/hotel/rooms-suites.html'
     },
@@ -332,7 +332,7 @@ const setupCasinoModal = () => {
       location: 'Monte Carlo, Monaco',
       games: '300+ gaming tables and slot machines',
       rooms: 'Casino only - Hotel de Paris adjacent',
-      description: 'The Casino de Monte-Carlo is a gambling and entertainment complex located in Monaco. It includes a casino, the Opéra de Monte-Carlo, and the office of Les Ballets de Monte-Carlo. The Casino de Monte-Carlo is owned and operated by the Société des bains de mer de Monaco, a public company in which the Monaco government holds a majority interest.',
+      description: 'The Casino de Monte-Carlo is a gambling and entertainment complex located in Monaco. It includes a casino, the Opera de Monte-Carlo, and the office of Les Ballets de Monte-Carlo. The Casino de Monte-Carlo is owned and operated by the Societe des bains de mer de Monaco, a public company in which the Monaco government holds a majority interest.',
       website: 'https://www.montecarlosbm.com/en/casino-monaco',
       booking: 'https://www.montecarlosbm.com/en/hotel-monaco'
     }
